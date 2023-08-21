@@ -1,0 +1,19 @@
+{
+    "name": "@lovelyjacob/lib",
+    "version": "1.0.0",
+    "description": "Simple utility package created by LovelyJacob.",
+    "main": "src/core.js",
+    "scripts": {
+        "test": "node test/run.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jacobhumston/lib.git"
+    },
+    "author": "jacobhumston",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jacobhumston/lib/issues"
+    },
+    "homepage": "https://github.com/jacobhumston/lib#readme"
+}
