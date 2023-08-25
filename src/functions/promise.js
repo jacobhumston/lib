@@ -3,14 +3,18 @@
  * Promise based functions.
  */
 
+// Imports
+import * as validate from './validator.js';
+
 /**
  * Returns a promise that resolves after the time provided.
  * @param {number} time The amount of time (in milliseconds) to wait.
  * @returns {Promise<void>}
  */
 export function wait(time) {
-    if (typeof time !== 'number') throw 'Parameter "time" is not a number.';
+    validate.param('number', time, 'time');
     if (0 > time) throw 'Parameter "time" is not greater then or equal to 0.';
+
     return new Promise(function (resolve) {
         setTimeout(resolve, time);
     });
@@ -24,11 +28,12 @@ export function wait(time) {
  * @returns {Promise<any[]>} An array of results of each iteration.
  */
 export function waitLoop(callback, amount, time) {
-    if (typeof callback !== 'function') throw 'Parameter "callback" is not a function.';
-    if (typeof amount !== 'number') throw 'Parameter "amount" is not a number.';
+    validate.param('function', callback, 'callback');
+    validate.param('number', amount, 'amount');
+    validate.param('number', time, 'time', true);
     if (1 > amount) throw 'Parameter "amount" is not greater then or equal to 1.';
-    if (time !== undefined) if (typeof time !== 'number') throw 'Parameter "time" is not a number.';
     if (0 > time) throw 'Parameter "time" is not greater then or equal to 0.';
+
     const results = [];
     return new Promise(async function (resolve) {
         for (let i = 0; i < amount; i++) {
