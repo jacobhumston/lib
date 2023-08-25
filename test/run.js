@@ -2,6 +2,5 @@
 import * as lib from '../src/core.js';
 
 // Tests
-const result = lib.createFileTree('C:/');
-console.log(JSON.stringify(result));
-console.log(result);
+const server = lib.quickServer(1002, 'pong');
+lib.wait(2000).then(() => server.close());

@@ -3,7 +3,9 @@
  * File based functions.
  */
 
+// Imports
 import * as fs from 'fs';
+import * as validate from './validator.js';
 
 /**
  * @typedef {Object} fileTreeObject
@@ -26,9 +28,10 @@ import * as fs from 'fs';
  * @returns {fileTreeResult}
  */
 export function createFileTree(path) {
-    if (typeof path !== 'string') throw 'Parameter "path" is not a string.';
+    validate.param('string', path, 'path');
     if (!fs.existsSync(path)) throw 'Path does not exist.';
     if (!fs.lstatSync(path).isDirectory()) throw 'Path is not a directory.';
+
     const result = [];
     let failed = 0;
     let fileCount = 0;
