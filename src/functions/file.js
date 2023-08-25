@@ -3,6 +3,7 @@
  * File based functions.
  */
 
+// Imports
 import * as fs from 'fs';
 
 /**

@@ -1,6 +1,7 @@
 // Imports
-import { wait } from './functions/promise.js';
+import { wait, waitLoop } from './functions/promise.js';
 import { createFileTree } from './functions/file.js';
+import { param } from './functions/validator.js';
 
 // Exports
-export { wait, createFileTree };
+export { wait, waitLoop, createFileTree, param };
