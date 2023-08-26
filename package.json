@@ -1,6 +1,6 @@
 {
     "name": "@jacobhumston/lib",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Simple utility package created by Jacob Humston.",
     "main": "src/core.js",
     "type": "module",
