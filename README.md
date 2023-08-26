@@ -1,2 +1,2 @@
 # @jacobhumston/lib
-Simple utility package created by LovelyJacob.
+Simple utility package created by Jacob Humston.
