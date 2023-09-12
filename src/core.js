@@ -4,6 +4,18 @@ import { createFileTree } from './functions/file.js';
 import { param, paramObject } from './functions/validator.js';
 import { quickServer, quickRedirectServer } from './functions/http.js';
 import { TimeConversion } from './classes/timeConversion.js';
+import { getColor, log } from './functions/console.js';
 
 // Exports
-export { wait, waitLoop, createFileTree, param, paramObject, quickServer, quickRedirectServer, TimeConversion };
+export {
+    wait,
+    waitLoop,
+    createFileTree,
+    param,
+    paramObject,
+    quickServer,
+    quickRedirectServer,
+    TimeConversion,
+    getColor,
+    log,
+};
