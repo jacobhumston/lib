@@ -34,6 +34,8 @@ import * as validate from './validator.js';
  * @returns {string} ANSI Color Escape Sequence
  */
 export function getColor(name) {
+    validate.param('string', name, 'name');
+
     // Source: https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124
     const codes = {
         Black: '\u001b[0;30m',
@@ -67,5 +69,9 @@ export function getColor(name) {
  * @returns {void}
  */
 export function log(type, message, noColor) {
+    validate.param("string", type, "type")
+    validate.param("string", message, "message")
+    validate.param("boolean", noColor, "noColor", true)
+
     console.log(`[${type}]`, getColor('Red') + message);
 }
