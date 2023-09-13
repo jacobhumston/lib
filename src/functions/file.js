@@ -82,7 +82,7 @@ export function createFileTree(path) {
 /**
  * Duplicate a file.
  * The new file will be included with "(number)" in it's name if a file in the directory already exists.
- * @param {string} file
+ * @param {string} file Path of the file to duplicate.
  * @param {string} [outputPath] Path to place the new file. If undefined, the output path will be the file's path.
  * @returns {string} The path of the new file.
  */
