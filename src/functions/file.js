@@ -92,7 +92,7 @@ export function duplicateFile(file, outputPath) {
     let newFile = path.basename(file);
     let newPath = outputPath ?? path.dirname(file);
     let lastNumber = 0;
-    while (fs.existsSync(newFile)) {
+    while (fs.existsSync(`${newPath}/${newFile}`)) {
         if (newFile.includes(`(${lastNumber})`)) {
             newFile = newFile.replace(`(${lastNumber})`, `(${lastNumber + 1})`);
             lastNumber++;
