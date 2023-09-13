@@ -69,9 +69,41 @@ export function getColor(name) {
  * @returns {void}
  */
 export function log(type, message, noColor) {
-    validate.param("string", type, "type")
-    validate.param("string", message, "message")
-    validate.param("boolean", noColor, "noColor", true)
+    validate.param('string', type, 'type');
+    validate.param('string', message, 'message');
+    validate.param('boolean', noColor, 'noColor', true);
 
-    console.log(`[${type}]`, getColor('Red') + message);
+    const typeColors = {
+        Success: 'Green',
+        Error: 'Red',
+        Warn: 'Yellow',
+        Debug: 'Purple',
+    };
+
+    /**
+     * Adds spaces to the end of a sting to make it match a certain length.
+     * @param {string} string
+     * @param {number} length
+     * @returns {string}
+     */
+    function fixStringLength(string, length) {
+        if (string.length >= length) return string;
+        let newString = string;
+        while (newString.length !== length) {
+            newString = newString + ' ';
+        }
+        return newString;
+    }
+
+    const stringLength = '[Success]'.length;
+
+    if (type === 'Log' || noColor == true) {
+        console.log(`${fixStringLength(`[${type.toUpperCase()}]`, stringLength)} | ${message}`);
+        return;
+    }
+
+    console.log(
+        `${getColor('Background' + typeColors[type])}${fixStringLength(`[${type.toUpperCase()}]`, stringLength)}`,
+        `${getColor('Reset')}${getColor(typeColors[type])}| ${message}${getColor('Reset')}`
+    );
 }
