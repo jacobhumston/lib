@@ -95,15 +95,18 @@ export function log(type, message, noColor) {
         return newString;
     }
 
-    const stringLength = '[Success]'.length;
+    const stringLength = `[Success]${getColor('Reset')}`.length;
 
     if (type === 'Log' || noColor == true) {
-        console.log(`${fixStringLength(`[${type.toUpperCase()}]`, stringLength)} | ${message}`);
+        console.log(`${fixStringLength(`[${type.toUpperCase()}]${getColor('Reset')}`, stringLength)} | ${message}`);
         return;
     }
 
     console.log(
-        `${getColor('Background' + typeColors[type])}${fixStringLength(`[${type.toUpperCase()}]`, stringLength)}`,
-        `${getColor('Reset')}${getColor(typeColors[type])}| ${message}${getColor('Reset')}`
+        `${getColor('Background' + typeColors[type])}${fixStringLength(
+            `[${type.toUpperCase()}]${getColor('Reset')}`,
+            stringLength
+        )}`,
+        `${getColor(typeColors[type])}| ${message}${getColor('Reset')}`
     );
 }
