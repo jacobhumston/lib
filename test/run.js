@@ -2,4 +2,4 @@
 import * as lib from '../src/core.js';
 
 // Tests
-lib.log("Success", "hii")
+const cache = new lib.Cache(1);

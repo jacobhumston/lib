@@ -5,6 +5,7 @@
 
 // Imports
 import * as fs from 'fs';
+import * as path from 'path';
 import * as validate from './validator.js';
 
 /**
@@ -76,4 +77,30 @@ export function createFileTree(path) {
         failed: failed,
         fileCount: fileCount,
     };
+}
+
+/**
+ * Duplicate a file.
+ * The new file will be included with "(number)" in it's name if a file in the directory already exists.
+ * @param {string} file Path of the file to duplicate.
+ * @param {string} [outputPath] Path to place the new file. If undefined, the output path will be the file's path.
+ * @returns {string} The path of the new file.
+ */
+export function duplicateFile(file, outputPath) {
+    validate.param('string', file, 'file');
+    validate.param('string', outputPath, 'outputPath', true);
+    let newFile = path.basename(file);
+    let newPath = outputPath ?? path.dirname(file);
+    let lastNumber = 0;
+    while (fs.existsSync(`${newPath}/${newFile}`)) {
+        if (newFile.includes(`(${lastNumber})`)) {
+            newFile = newFile.replace(`(${lastNumber})`, `(${lastNumber + 1})`);
+            lastNumber++;
+        } else {
+            newFile = `(${lastNumber + 1})-${newFile}`;
+            lastNumber++;
+        }
+    }
+    fs.writeFileSync(`${newPath}/${newFile}`, fs.readFileSync(file));
+    return newFile;
 }

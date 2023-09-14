@@ -29,7 +29,7 @@ import * as validate from './validator.js';
 
 /**
  * Returns an ANSI Color Escape Sequence.
- * It's important to note that colors can be different per terminal.
+ * It's important to note that colors can be visually different per terminal.
  * @param {ANSIColorCode} name Of the ANSI Color Escape Sequence.
  * @returns {string} ANSI Color Escape Sequence
  */
@@ -69,9 +69,44 @@ export function getColor(name) {
  * @returns {void}
  */
 export function log(type, message, noColor) {
-    validate.param("string", type, "type")
-    validate.param("string", message, "message")
-    validate.param("boolean", noColor, "noColor", true)
+    validate.param('string', type, 'type');
+    validate.param('string', message, 'message');
+    validate.param('boolean', noColor, 'noColor', true);
 
-    console.log(`[${type}]`, getColor('Red') + message);
+    const typeColors = {
+        Success: 'Green',
+        Error: 'Red',
+        Warn: 'Yellow',
+        Debug: 'Purple',
+    };
+
+    /**
+     * Adds spaces to the end of a sting to make it match a certain length.
+     * @param {string} string
+     * @param {number} length
+     * @returns {string}
+     */
+    function fixStringLength(string, length) {
+        if (string.length >= length) return string;
+        let newString = string;
+        while (newString.length !== length) {
+            newString = newString + ' ';
+        }
+        return newString;
+    }
+
+    const stringLength = `[Success]${getColor('Reset')}`.length;
+
+    if (type === 'Log' || noColor == true) {
+        console.log(`${fixStringLength(`[${type.toUpperCase()}]${getColor('Reset')}`, stringLength)} | ${message}`);
+        return;
+    }
+
+    console.log(
+        `${getColor('Background' + typeColors[type])}${fixStringLength(
+            `[${type.toUpperCase()}]${getColor('Reset')}`,
+            stringLength
+        )}`,
+        `${getColor(typeColors[type])}| ${message}${getColor('Reset')}`
+    );
 }
