@@ -29,7 +29,7 @@ import * as validate from './validator.js';
 
 /**
  * Returns an ANSI Color Escape Sequence.
- * It's important to note that colors can be different per terminal.
+ * It's important to note that colors can be visually different per terminal.
  * @param {ANSIColorCode} name Of the ANSI Color Escape Sequence.
  * @returns {string} ANSI Color Escape Sequence
  */

@@ -1,11 +1,14 @@
 /**
  * @file cache.js
- * A simple class to keep cache items. (In memory.)
+ * A simple class to keep cached items. (In memory.)
  */
 
 // Imports
 import * as validate from '../functions/validator.js';
 
+/**
+ * A simple class to keep cached items. (In memory.)
+ */
 export class Cache {
     /**
      * Create an instance of *Cache*.
