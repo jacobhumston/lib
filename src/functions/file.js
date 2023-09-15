@@ -84,12 +84,15 @@ export function createFileTree(path) {
  * The new file will be included with "(number)" in it's name if a file in the directory already exists.
  * @param {string} file Path of the file to duplicate.
  * @param {string} [outputPath] Path to place the new file. If undefined, the output path will be the file's path.
+ * @param {string} [newName] New name for the file. If undefined, the file's name will be the same.
  * @returns {string} The path of the new file.
  */
-export function duplicateFile(file, outputPath) {
+export function duplicateFile(file, outputPath, newName) {
     validate.param('string', file, 'file');
     validate.param('string', outputPath, 'outputPath', true);
-    let newFile = path.basename(file);
+    validate.param('string', newName, 'newName', true);
+
+    let newFile = newName ?? path.basename(file);
     let newPath = outputPath ?? path.dirname(file);
     let lastNumber = 0;
     while (fs.existsSync(`${newPath}/${newFile}`)) {
