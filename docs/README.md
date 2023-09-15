@@ -1,3 +1,5 @@
+This documentation is auto generated, for more info, please visit: https://github.com/jacobhumston/lib
+
 ## Classes
 
 <dl>
