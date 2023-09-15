@@ -19,7 +19,6 @@ export class Cache {
     /**
      * Create an instance of *Cache*.
      * @param {number} itemExpire The amount of time (in seconds) that an item will be removed after it is added.
-     * @constructor
      */
     constructor(itemExpire) {
         validate.param('number', itemExpire, 'itemExpire');
@@ -40,8 +39,6 @@ export class Cache {
     /**
      * Start the cache sweeper.
      * @param {number} itemExpire
-     * @method sweeper
-     * @private
      */
     #sweeper(itemExpire) {
         this.stop();
@@ -58,7 +55,6 @@ export class Cache {
 
     /**
      * Stops the cache's sweeper.
-     * @method
      */
     stop() {
         if (this.#intervalId) clearInterval(this.#intervalId);
@@ -68,7 +64,6 @@ export class Cache {
      * Start the cache's sweeper.
      * This will stop the sweeper and start it again if it's currently running.
      * @param {number} itemExpire The amount of time (in seconds) that an item will be removed after it is added.
-     * @method start
      */
     start() {
         validate.param('number', itemExpire, 'itemExpire');
@@ -79,7 +74,6 @@ export class Cache {
      * Get an item from the cache.
      * @param {string} name The name of the item.
      * @returns {any|null} The item, or null if it doesn't exist.
-     * @method get
      */
     get(name) {
         validate.param('string', name, 'name');
@@ -92,7 +86,6 @@ export class Cache {
      * @param {string} name The name of the item to set the value of.
      * @param {any} item The item.
      * @returns {void}
-     * @method set
      */
     set(name, item) {
         validate.param('string', name, 'name');
@@ -106,7 +99,6 @@ export class Cache {
      * Delete an item in the cache.
      * @param {string} name The name of the item to delete.
      * @returns {void}
-     * @method delete
      */
     delete(name) {
         delete this.#items[name];
@@ -115,7 +107,6 @@ export class Cache {
     /**
      * Delete all items in the cache.
      * @returns {void}
-     * @method clear
      */
     clear() {
         for (const itemKey in this.#items) {
