@@ -8,7 +8,7 @@ Simple utility package created by Jacob Humston.
 npm i @jacobhumston/lib
 ```
 
-# Usage
+## Usage
 
 ```js
 // .cjs
@@ -17,6 +17,6 @@ const lib = await import('@jacobhumston/lib');
 import * as lib from '@jacobhumston/lib';
 ```
 
-# Documentation
+## Documentation
 
 https://lib.lovelyjacob.com
