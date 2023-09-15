@@ -33,13 +33,14 @@ import * as validate from '../functions/validator.js';
 /**
  * Class to convert time. (Seconds to Hours for example.)
  */
-export default class TimeConversion {
+export class TimeConversion {
     #ms = 0;
 
     /**
      * Create an instance of *TimeConversion*.
      * @param {timeObject} time Time object to create this class with.
      * @returns {TimeConversion}
+     * @constructor
      */
     constructor(time) {
         validate.param('object', time, 'time');
@@ -72,6 +73,7 @@ export default class TimeConversion {
      * Add time.
      * @param {timeObject} time Time object to add.
      * @returns {void}
+     * @method add
      */
     add(time) {
         validate.param('object', time, 'time');
@@ -106,6 +108,7 @@ export default class TimeConversion {
      * Subtract time.
      * @param {timeObject} time Time object to subtract.
      * @returns {void}
+     * @method subtract
      */
     subtract(time) {
         validate.param('object', time, 'time');
@@ -141,6 +144,7 @@ export default class TimeConversion {
     /**
      * Create a timeObject.
      * @returns {timeObjectNormal}
+     * @method convert
      */
     convert() {
         return {
@@ -158,6 +162,7 @@ export default class TimeConversion {
     /**
      * Create a timeObject with a rounded result.
      * @returns {timeObjectNormal}
+     * @method roundedConvert
      */
     roundedConvert() {
         return {

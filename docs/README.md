@@ -1,9 +1,17 @@
+## Classes
+
+<dl>
+<dt><a href="#Cache">Cache</a></dt>
+<dd><p>A simple class to keep cached items. (In memory.)</p>
+</dd>
+<dt><a href="#TimeConversion">TimeConversion</a></dt>
+<dd><p>Class to convert time. (Seconds to Hours for example.)</p>
+</dd>
+</dl>
+
 ## Functions
 
 <dl>
-<dt><a href="#stop">stop()</a></dt>
-<dd><p>Stops the cache&#39;s sweeper.</p>
-</dd>
 <dt><a href="#start">start(itemExpire)</a></dt>
 <dd><p>Start the cache&#39;s sweeper.
 This will stop the sweeper and start it again if it&#39;s currently running.</p>
@@ -95,12 +103,6 @@ Not all params of this function are type checked.</p>
 <dd></dd>
 </dl>
 
-<a name="stop"></a>
-
-## stop()
-Stops the cache's sweeper.
-
-**Kind**: global function  
 <a name="start"></a>
 
 ## start(itemExpire)
