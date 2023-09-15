@@ -162,13 +162,13 @@ export class TimeConversion {
     roundedConvert() {
         return {
             milliseconds: this.#ms,
-            seconds: Math.round(Math.max(this.#ms / 1000, 0)),
-            minutes: Math.round(Math.max(this.#ms / 60000, 0)),
-            hours: Math.round(Math.max(this.#ms / 3.6e6, 0)),
-            days: Math.round(Math.max(this.#ms / 8.64e7, 0)),
-            weeks: Math.round(Math.max(this.#ms / 6.048e8, 0)),
-            months: Math.round(Math.max(this.#ms / 2.628e9, 0)),
-            years: Math.round(Math.max(this.#ms / 3.154e10, 0)),
+            seconds: Math.floor(Math.max(this.#ms / 1000, 0)),
+            minutes: Math.floor(Math.max(this.#ms / 60000, 0)),
+            hours: Math.floor(Math.max(this.#ms / 3.6e6, 0)),
+            days: Math.floor(Math.max(this.#ms / 8.64e7, 0)),
+            weeks: Math.floor(Math.max(this.#ms / 6.048e8, 0)),
+            months: Math.floor(Math.max(this.#ms / 2.628e9, 0)),
+            years: Math.floor(Math.max(this.#ms / 3.154e10, 0)),
         };
     }
 }
