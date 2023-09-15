@@ -22,11 +22,17 @@ export function param(type, value, name, optional) {
 }
 
 /**
+ * @typedef {object} typeObject
+ * @property {stringType} type
+ * @property {boolean} [optional]
+ */
+
+/**
  * Check if properties of an object are the correct type.
  * Object (value) should be type checked before using this function.
  * Not all params of this function are type checked.
  * @param {Object.<string, any>} [value] Value to check.
- * @param {Object.<string, { type: stringType, optional: [boolean] }>} object Object of types to check.
+ * @param {Object.<string, typeObject>} object Object of types to check.
  * @param {string} name Name of the parameter.
  * @param {boolean} [optional] If the parameter is optional. (default: false)
  * @returns {void}

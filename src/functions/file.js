@@ -37,7 +37,7 @@ export function createFileTree(path) {
     let failed = 0;
     let fileCount = 0;
     /** @param {string} path */
-    /** @param {[]} [array] */
+    /** @param {any[]} [array] */
     function dir(path, array) {
         const obj = {};
         obj.name = path.split('/').pop() ?? path;
