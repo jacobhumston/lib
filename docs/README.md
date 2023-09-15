@@ -1,17 +1,38 @@
-## Classes
-
-<dl>
-<dt><a href="#Cache">Cache</a></dt>
-<dd><p>A simple class to keep cached items. (In memory.)</p>
-</dd>
-<dt><a href="#TimeConversion">TimeConversion</a></dt>
-<dd><p>Class to convert time. (Seconds to Hours for example.)</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
+<dt><a href="#stop">stop()</a></dt>
+<dd><p>Stops the cache&#39;s sweeper.</p>
+</dd>
+<dt><a href="#start">start(itemExpire)</a></dt>
+<dd><p>Start the cache&#39;s sweeper.
+This will stop the sweeper and start it again if it&#39;s currently running.</p>
+</dd>
+<dt><a href="#get">get(name)</a> ⇒ <code>any</code> | <code>null</code></dt>
+<dd><p>Get an item from the cache.</p>
+</dd>
+<dt><a href="#set">set(name, item)</a> ⇒ <code>void</code></dt>
+<dd><p>Set the value of an item in cache.
+This <em>will</em> reset the item&#39;s expire time.</p>
+</dd>
+<dt><a href="#delete">delete(name)</a> ⇒ <code>void</code></dt>
+<dd><p>Delete an item in the cache.</p>
+</dd>
+<dt><a href="#clear">clear()</a> ⇒ <code>void</code></dt>
+<dd><p>Delete all items in the cache.</p>
+</dd>
+<dt><a href="#add">add(time)</a> ⇒ <code>void</code></dt>
+<dd><p>Add time.</p>
+</dd>
+<dt><a href="#subtract">subtract(time)</a> ⇒ <code>void</code></dt>
+<dd><p>Subtract time.</p>
+</dd>
+<dt><a href="#convert">convert()</a> ⇒ <code><a href="#timeObjectNormal">timeObjectNormal</a></code></dt>
+<dd><p>Create a timeObject.</p>
+</dd>
+<dt><a href="#roundedConvert">roundedConvert()</a> ⇒ <code><a href="#timeObjectNormal">timeObjectNormal</a></code></dt>
+<dd><p>Create a timeObject with a rounded result.</p>
+</dd>
 <dt><a href="#getColor">getColor(name)</a> ⇒ <code>string</code></dt>
 <dd><p>Returns an ANSI Color Escape Sequence.
 It&#39;s important to note that colors can be visually different per terminal.</p>
@@ -74,6 +95,98 @@ Not all params of this function are type checked.</p>
 <dd></dd>
 </dl>
 
+<a name="stop"></a>
+
+## stop()
+Stops the cache's sweeper.
+
+**Kind**: global function  
+<a name="start"></a>
+
+## start(itemExpire)
+Start the cache's sweeper.This will stop the sweeper and start it again if it's currently running.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| itemExpire | <code>number</code> | The amount of time (in seconds) that an item will be removed after it is added. |
+
+<a name="get"></a>
+
+## get(name) ⇒ <code>any</code> \| <code>null</code>
+Get an item from the cache.
+
+**Kind**: global function  
+**Returns**: <code>any</code> \| <code>null</code> - The item, or null if it doesn't exist.  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | The name of the item. |
+
+<a name="set"></a>
+
+## set(name, item) ⇒ <code>void</code>
+Set the value of an item in cache.This *will* reset the item's expire time.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | The name of the item to set the value of. |
+| item | <code>any</code> | The item. |
+
+<a name="delete"></a>
+
+## delete(name) ⇒ <code>void</code>
+Delete an item in the cache.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| name | <code>string</code> | The name of the item to delete. |
+
+<a name="clear"></a>
+
+## clear() ⇒ <code>void</code>
+Delete all items in the cache.
+
+**Kind**: global function  
+<a name="add"></a>
+
+## add(time) ⇒ <code>void</code>
+Add time.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| time | [<code>timeObject</code>](#timeObject) | Time object to add. |
+
+<a name="subtract"></a>
+
+## subtract(time) ⇒ <code>void</code>
+Subtract time.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| time | [<code>timeObject</code>](#timeObject) | Time object to subtract. |
+
+<a name="convert"></a>
+
+## convert() ⇒ [<code>timeObjectNormal</code>](#timeObjectNormal)
+Create a timeObject.
+
+**Kind**: global function  
+<a name="roundedConvert"></a>
+
+## roundedConvert() ⇒ [<code>timeObjectNormal</code>](#timeObjectNormal)
+Create a timeObject with a rounded result.
+
+**Kind**: global function  
 <a name="getColor"></a>
 
 ## getColor(name) ⇒ <code>string</code>

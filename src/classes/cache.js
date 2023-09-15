@@ -15,7 +15,7 @@ import * as validate from '../functions/validator.js';
 /**
  * A simple class to keep cached items. (In memory.)
  */
-export class Cache {
+export default class Cache {
     /**
      * Create an instance of *Cache*.
      * @param {number} itemExpire The amount of time (in seconds) that an item will be removed after it is added.

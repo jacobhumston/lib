@@ -33,7 +33,7 @@ import * as validate from '../functions/validator.js';
 /**
  * Class to convert time. (Seconds to Hours for example.)
  */
-export class TimeConversion {
+export default class TimeConversion {
     #ms = 0;
 
     /**
