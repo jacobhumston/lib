@@ -107,3 +107,39 @@ export function duplicateFile(file, outputPath, newName) {
     fs.writeFileSync(`${newPath}/${newFile}`, fs.readFileSync(file));
     return newFile;
 }
+
+/**
+ * @typedef {object} filePermissions
+ * @property {boolean} visible If this file is visible.
+ * @property {boolean} read If this file can be read.
+ * @property {boolean} write If this file can be written to.
+ * @property {boolean} execute If this file can be executed.
+ */
+
+/**
+ * Get the permissions of a file.
+ * @param {string} file Path to file to get the permissions of.
+ * @returns {filePermissions}
+ */
+export function getFilePermissions(file) {
+    validate.param('string', file, 'file');
+
+    const permissions = {
+        visible: fs.constants.F_OK,
+        read: fs.constants.R_OK,
+        write: fs.constants.W_OK,
+        execute: fs.constants.X_OK,
+    };
+    const result = {};
+    for (const permission in permissions) {
+        const constant = permissions[permission];
+        let success = true;
+        try {
+            fs.accessSync(file, constant);
+        } catch {
+            success = false;
+        }
+        result[permission] = success;
+    }
+    return result;
+}

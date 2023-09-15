@@ -24,9 +24,12 @@ It&#39;s important to note that colors can be visually different per terminal.</
 <dt><a href="#createFileTree">createFileTree(path)</a> ⇒ <code><a href="#fileTreeResult">fileTreeResult</a></code></dt>
 <dd><p>Create a file tree array from a directory.</p>
 </dd>
-<dt><a href="#duplicateFile">duplicateFile(file, [outputPath])</a> ⇒ <code>string</code></dt>
+<dt><a href="#duplicateFile">duplicateFile(file, [outputPath], [newName])</a> ⇒ <code>string</code></dt>
 <dd><p>Duplicate a file.
 The new file will be included with &quot;(number)&quot; in it&#39;s name if a file in the directory already exists.</p>
+</dd>
+<dt><a href="#getFilePermissions">getFilePermissions(file)</a> ⇒ <code><a href="#filePermissions">filePermissions</a></code></dt>
+<dd><p>Get the permissions of a file.</p>
 </dd>
 <dt><a href="#quickServer">quickServer(port, message)</a> ⇒ <code>http.Server</code></dt>
 <dd><p>Create a quick http server that responds with a plain text message.</p>
@@ -69,6 +72,8 @@ Not all params of this function are type checked.</p>
 <dd></dd>
 <dt><a href="#fileTreeResult">fileTreeResult</a> : <code>Object</code></dt>
 <dd></dd>
+<dt><a href="#filePermissions">filePermissions</a> : <code>object</code></dt>
+<dd></dd>
 <dt><a href="#stringType">stringType</a> : <code>&quot;undefined&quot;</code> | <code>&quot;object&quot;</code> | <code>&quot;boolean&quot;</code> | <code>&quot;number&quot;</code> | <code>&quot;bigint&quot;</code> | <code>&quot;string&quot;</code> | <code>&quot;function&quot;</code></dt>
 <dd><p>Possible results of <em>typeof</em>.</p>
 </dd>
@@ -79,7 +84,8 @@ Not all params of this function are type checked.</p>
 <a name="getColor"></a>
 
 ## getColor(name) ⇒ <code>string</code>
-Returns an ANSI Color Escape Sequence.It's important to note that colors can be visually different per terminal.
+Returns an ANSI Color Escape Sequence.
+It's important to note that colors can be visually different per terminal.
 
 **Kind**: global function  
 **Returns**: <code>string</code> - ANSI Color Escape Sequence  
@@ -135,8 +141,9 @@ Create a file tree array from a directory.
 
 <a name="duplicateFile"></a>
 
-## duplicateFile(file, [outputPath]) ⇒ <code>string</code>
-Duplicate a file.The new file will be included with "(number)" in it's name if a file in the directory already exists.
+## duplicateFile(file, [outputPath], [newName]) ⇒ <code>string</code>
+Duplicate a file.
+The new file will be included with "(number)" in it's name if a file in the directory already exists.
 
 **Kind**: global function  
 **Returns**: <code>string</code> - The path of the new file.  
@@ -145,6 +152,18 @@ Duplicate a file.The new file will be included with "(number)" in it's name if 
 | --- | --- | --- |
 | file | <code>string</code> | Path of the file to duplicate. |
 | [outputPath] | <code>string</code> | Path to place the new file. If undefined, the output path will be the file's path. |
+| [newName] | <code>string</code> | New name for the file. If undefined, the file's name will be the same. |
+
+<a name="getFilePermissions"></a>
+
+## getFilePermissions(file) ⇒ [<code>filePermissions</code>](#filePermissions)
+Get the permissions of a file.
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| file | <code>string</code> | Path to file to get the permissions of. |
 
 <a name="quickServer"></a>
 
@@ -200,7 +219,8 @@ Returns a promise that resolves once *callback* is called  *amount* of times.
 <a name="param"></a>
 
 ## param(type, [value], name, [optional]) ⇒ <code>void</code>
-Check if a parameter is the correct type.This function is not type checked on its own.
+Check if a parameter is the correct type.
+This function is not type checked on its own.
 
 **Kind**: global function  
 
@@ -214,7 +234,9 @@ Check if a parameter is the correct type.This function is not type checked on i
 <a name="paramObject"></a>
 
 ## paramObject([value], object, name, [optional]) ⇒ <code>void</code>
-Check if properties of an object are the correct type.Object (value) should be type checked before using this function.Not all params of this function are type checked.
+Check if properties of an object are the correct type.
+Object (value) should be type checked before using this function.
+Not all params of this function are type checked.
 
 **Kind**: global function  
 
@@ -304,6 +326,19 @@ Time object.
 | result | [<code>Array.&lt;fileTreeObject&gt;</code>](#fileTreeObject) | The resulting file tree object. |
 | failed | <code>number</code> | Number of files which were not added due to an error. (Likely permission error, or private files.) |
 | fileCount | <code>number</code> | Number of files in this tree. (Does NOT include directories.) |
+
+<a name="filePermissions"></a>
+
+## filePermissions : <code>object</code>
+**Kind**: global typedef  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| visible | <code>boolean</code> | If this file is visible. |
+| read | <code>boolean</code> | If this file can be read. |
+| write | <code>boolean</code> | If this file can be written to. |
+| execute | <code>boolean</code> | If this file can be executed. |
 
 <a name="stringType"></a>
 

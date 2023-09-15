@@ -2,5 +2,4 @@
 import * as lib from '../src/core.js';
 
 // Tests
-
-lib.duplicateFile("test/run.js", ".", "hi.js")
+console.log(lib.getFilePermissions('src/'));
