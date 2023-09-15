@@ -9,7 +9,7 @@ import * as validate from '../functions/validator.js';
 /**
  * @typedef {object} cacheItem An item in the cache.
  * @property {any} item The cached item.
- * @property {number} stamp The time when this item should expire.
+ * @property {number} stamp The timestamp of when this item was created.
  */
 
 /**
@@ -43,9 +43,10 @@ export class Cache {
     #sweeper(itemExpire) {
         this.stop();
         this.#intervalId = setInterval(() => {
+            const currentTime = new Date().getTime();
             for (const itemKey in this.#items) {
                 const item = this.#items[itemKey];
-                if (new Date().getTime() - item.stamp <= itemExpire * 1000) {
+                if (currentTime - item.stamp >= itemExpire * 1000) {
                     delete this.#items[itemKey];
                 }
             }
@@ -92,5 +93,24 @@ export class Cache {
             item: item,
             stamp: new Date().getTime(),
         };
+    }
+
+    /**
+     * Delete an item in the cache.
+     * @param {string} name The name of the item to delete.
+     * @returns {void}
+     */
+    delete(name) {
+        delete this.#items[name];
+    }
+
+    /**
+     * Delete all items in the cache.
+     * @returns {void}
+     */
+    clear() {
+        for (const itemKey in this.#items) {
+            delete this.#items[itemKey];
+        }
     }
 }
