@@ -84,8 +84,7 @@ Not all params of this function are type checked.</p>
 <a name="getColor"></a>
 
 ## getColor(name) ⇒ <code>string</code>
-Returns an ANSI Color Escape Sequence.
-It's important to note that colors can be visually different per terminal.
+Returns an ANSI Color Escape Sequence.It's important to note that colors can be visually different per terminal.
 
 **Kind**: global function  
 **Returns**: <code>string</code> - ANSI Color Escape Sequence  
@@ -142,8 +141,7 @@ Create a file tree array from a directory.
 <a name="duplicateFile"></a>
 
 ## duplicateFile(file, [outputPath], [newName]) ⇒ <code>string</code>
-Duplicate a file.
-The new file will be included with "(number)" in it's name if a file in the directory already exists.
+Duplicate a file.The new file will be included with "(number)" in it's name if a file in the directory already exists.
 
 **Kind**: global function  
 **Returns**: <code>string</code> - The path of the new file.  
@@ -219,8 +217,7 @@ Returns a promise that resolves once *callback* is called  *amount* of times.
 <a name="param"></a>
 
 ## param(type, [value], name, [optional]) ⇒ <code>void</code>
-Check if a parameter is the correct type.
-This function is not type checked on its own.
+Check if a parameter is the correct type.This function is not type checked on its own.
 
 **Kind**: global function  
 
@@ -234,9 +231,7 @@ This function is not type checked on its own.
 <a name="paramObject"></a>
 
 ## paramObject([value], object, name, [optional]) ⇒ <code>void</code>
-Check if properties of an object are the correct type.
-Object (value) should be type checked before using this function.
-Not all params of this function are type checked.
+Check if properties of an object are the correct type.Object (value) should be type checked before using this function.Not all params of this function are type checked.
 
 **Kind**: global function  
 
