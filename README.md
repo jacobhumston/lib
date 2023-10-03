@@ -11,18 +11,24 @@ npm i @jacobhumston/lib
 ## Usage
 
 ```js
-// .cjs
+// CommonJs
 const lib = await import('@jacobhumston/lib');
-// .mjs
-import * as lib from '@jacobhumston/lib';
 ```
 
-## Web
-
-This library also includes a web polyfill. This is **experimental** and is not recommended for production.
+```js
+// ESM
+import * as lib from '@jacobhumston/lib';
+// Or use named exports...
+import { wait, log } from '@jacobhumston/lib';
+```
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/web/main.js"></script>
+<!-- Browser -->
+<script type="module">
+  import * as lib from 'https://lib.lovelyjacob.com/index.js';
+  // Or use named exports...
+  import { wait, log } from 'https://lib.lovelyjacob.com/index.js';
+</script>
 ```
 
 ## Documentation
