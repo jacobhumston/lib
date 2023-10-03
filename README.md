@@ -29,4 +29,5 @@ import { wait, log } from 'https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/w
 
 ## Documentation
 
-https://lib.lovelyjacob.com
+-   Node: https://lib.lovelyjacob.com
+-   Web: https://lib.lovelyjacob.com/web/

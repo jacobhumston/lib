@@ -21,22 +21,6 @@ It&#39;s important to note that colors can be visually different per terminal.</
 <dt><a href="#log">log(type, message, [noColor])</a> ⇒ <code>void</code></dt>
 <dd><p>Log to the console in a neat format.</p>
 </dd>
-<dt><a href="#createFileTree">createFileTree(path)</a> ⇒ <code><a href="#fileTreeResult">fileTreeResult</a></code></dt>
-<dd><p>Create a file tree array from a directory.</p>
-</dd>
-<dt><a href="#duplicateFile">duplicateFile(file, [outputPath], [newName])</a> ⇒ <code>string</code></dt>
-<dd><p>Duplicate a file.
-The new file will be included with &quot;(number)&quot; in it&#39;s name if a file in the directory already exists.</p>
-</dd>
-<dt><a href="#getFilePermissions">getFilePermissions(file)</a> ⇒ <code><a href="#filePermissions">filePermissions</a></code></dt>
-<dd><p>Get the permissions of a file.</p>
-</dd>
-<dt><a href="#quickServer">quickServer(port, message)</a> ⇒ <code>http.Server</code></dt>
-<dd><p>Create a quick http server that responds with a plain text message.</p>
-</dd>
-<dt><a href="#quickRedirectServer">quickRedirectServer(port, location)</a> ⇒ <code>http.Server</code></dt>
-<dd><p>Create a quick http server that redirects all requests to another location.</p>
-</dd>
 <dt><a href="#wait">wait(time)</a> ⇒ <code>Promise.&lt;void&gt;</code></dt>
 <dd><p>Returns a promise that resolves after the time provided.</p>
 </dd>
@@ -67,12 +51,6 @@ Not all params of this function are type checked.</p>
 <dd><p>Time object.</p>
 </dd>
 <dt><a href="#ANSIColorCode">ANSIColorCode</a> : <code>&quot;Black&quot;</code> | <code>&quot;Red&quot;</code> | <code>&quot;Green&quot;</code> | <code>&quot;Yellow&quot;</code> | <code>&quot;Blue&quot;</code> | <code>&quot;Purple&quot;</code> | <code>&quot;Cyan&quot;</code> | <code>&quot;White&quot;</code> | <code>&quot;BackgroundBlack&quot;</code> | <code>&quot;BackgroundRed&quot;</code> | <code>&quot;BackgroundGreen&quot;</code> | <code>&quot;BackgroundYellow&quot;</code> | <code>&quot;BackgroundBlue&quot;</code> | <code>&quot;BackgroundPurple&quot;</code> | <code>&quot;BackgroundCyan&quot;</code> | <code>&quot;BackgroundWhite&quot;</code> | <code>&quot;Reset&quot;</code></dt>
-<dd></dd>
-<dt><a href="#fileTreeObject">fileTreeObject</a> : <code>Object</code></dt>
-<dd></dd>
-<dt><a href="#fileTreeResult">fileTreeResult</a> : <code>Object</code></dt>
-<dd></dd>
-<dt><a href="#filePermissions">filePermissions</a> : <code>object</code></dt>
 <dd></dd>
 <dt><a href="#stringType">stringType</a> : <code>&quot;undefined&quot;</code> | <code>&quot;object&quot;</code> | <code>&quot;boolean&quot;</code> | <code>&quot;number&quot;</code> | <code>&quot;bigint&quot;</code> | <code>&quot;string&quot;</code> | <code>&quot;function&quot;</code></dt>
 <dd><p>Possible results of <em>typeof</em>.</p>
@@ -117,77 +95,6 @@ Adds spaces to the end of a sting to make it match a certain length.
 | --- | --- |
 | string | <code>string</code> | 
 | length | <code>number</code> | 
-
-<a name="createFileTree"></a>
-
-## createFileTree(path) ⇒ [<code>fileTreeResult</code>](#fileTreeResult)
-Create a file tree array from a directory.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| path | <code>string</code> | Path to the directory to create a file tree array from. |
-
-<a name="createFileTree..dir"></a>
-
-### createFileTree~dir([array])
-**Kind**: inner method of [<code>createFileTree</code>](#createFileTree)  
-
-| Param | Type |
-| --- | --- |
-| [array] | <code>Array.&lt;any&gt;</code> | 
-
-<a name="duplicateFile"></a>
-
-## duplicateFile(file, [outputPath], [newName]) ⇒ <code>string</code>
-Duplicate a file.The new file will be included with "(number)" in it's name if a file in the directory already exists.
-
-**Kind**: global function  
-**Returns**: <code>string</code> - The path of the new file.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| file | <code>string</code> | Path of the file to duplicate. |
-| [outputPath] | <code>string</code> | Path to place the new file. If undefined, the output path will be the file's path. |
-| [newName] | <code>string</code> | New name for the file. If undefined, the file's name will be the same. |
-
-<a name="getFilePermissions"></a>
-
-## getFilePermissions(file) ⇒ [<code>filePermissions</code>](#filePermissions)
-Get the permissions of a file.
-
-**Kind**: global function  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| file | <code>string</code> | Path to file to get the permissions of. |
-
-<a name="quickServer"></a>
-
-## quickServer(port, message) ⇒ <code>http.Server</code>
-Create a quick http server that responds with a plain text message.
-
-**Kind**: global function  
-**Returns**: <code>http.Server</code> - The created server.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| port | <code>number</code> | Port to listen to. |
-| message | <code>string</code> | Message to send. |
-
-<a name="quickRedirectServer"></a>
-
-## quickRedirectServer(port, location) ⇒ <code>http.Server</code>
-Create a quick http server that redirects all requests to another location.
-
-**Kind**: global function  
-**Returns**: <code>http.Server</code> - The created server.  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| port | <code>number</code> | Port to listen to. |
-| location | <code>string</code> | Location to redirect to. |
 
 <a name="wait"></a>
 
@@ -297,44 +204,6 @@ Time object.
 
 ## ANSIColorCode : <code>&quot;Black&quot;</code> \| <code>&quot;Red&quot;</code> \| <code>&quot;Green&quot;</code> \| <code>&quot;Yellow&quot;</code> \| <code>&quot;Blue&quot;</code> \| <code>&quot;Purple&quot;</code> \| <code>&quot;Cyan&quot;</code> \| <code>&quot;White&quot;</code> \| <code>&quot;BackgroundBlack&quot;</code> \| <code>&quot;BackgroundRed&quot;</code> \| <code>&quot;BackgroundGreen&quot;</code> \| <code>&quot;BackgroundYellow&quot;</code> \| <code>&quot;BackgroundBlue&quot;</code> \| <code>&quot;BackgroundPurple&quot;</code> \| <code>&quot;BackgroundCyan&quot;</code> \| <code>&quot;BackgroundWhite&quot;</code> \| <code>&quot;Reset&quot;</code>
 **Kind**: global typedef  
-<a name="fileTreeObject"></a>
-
-## fileTreeObject : <code>Object</code>
-**Kind**: global typedef  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| name | <code>string</code> | Name of the file. |
-| path | <code>string</code> | Path of the file. |
-| isDirectory | <code>boolean</code> | If the file is a directory or not. |
-| files | [<code>Array.&lt;fileTreeObject&gt;</code>](#fileTreeObject) \| <code>null</code> | Files of this directory. (Null if not a directory.) |
-
-<a name="fileTreeResult"></a>
-
-## fileTreeResult : <code>Object</code>
-**Kind**: global typedef  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| result | [<code>Array.&lt;fileTreeObject&gt;</code>](#fileTreeObject) | The resulting file tree object. |
-| failed | <code>number</code> | Number of files which were not added due to an error. (Likely permission error, or private files.) |
-| fileCount | <code>number</code> | Number of files in this tree. (Does NOT include directories.) |
-
-<a name="filePermissions"></a>
-
-## filePermissions : <code>object</code>
-**Kind**: global typedef  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| visible | <code>boolean</code> | If this file is visible. |
-| read | <code>boolean</code> | If this file can be read. |
-| write | <code>boolean</code> | If this file can be written to. |
-| execute | <code>boolean</code> | If this file can be executed. |
-
 <a name="stringType"></a>
 
 ## stringType : <code>&quot;undefined&quot;</code> \| <code>&quot;object&quot;</code> \| <code>&quot;boolean&quot;</code> \| <code>&quot;number&quot;</code> \| <code>&quot;bigint&quot;</code> \| <code>&quot;string&quot;</code> \| <code>&quot;function&quot;</code>
