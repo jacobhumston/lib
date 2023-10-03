@@ -18,13 +18,13 @@ const lib = await import('@jacobhumston/lib');
 ```js
 // ESM
 import * as lib from '@jacobhumston/lib';
+
 // Or use named exports...
 import { wait, log } from '@jacobhumston/lib';
-```
 
-```html
-<!-- Browser (GitHub) -->
-<script type="module" src="https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/web/core.min.js"></script>
+// Or if you are on the web using a CDN...
+// Note: Change the version "latest" to the version you want to use.
+import { wait, log } from 'https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/web/core.min.js';
 ```
 
 ## Documentation
