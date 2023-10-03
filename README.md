@@ -23,12 +23,8 @@ import { wait, log } from '@jacobhumston/lib';
 ```
 
 ```html
-<!-- Browser -->
-<script type="module">
-  import * as lib from 'https://lib.lovelyjacob.com/index.js';
-  // Or use named exports...
-  import { wait, log } from 'https://lib.lovelyjacob.com/index.js';
-</script>
+<!-- Browser (GitHub) -->
+<script type="module" src="https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/web/core.min.js"></script>
 ```
 
 ## Documentation
