@@ -17,11 +17,17 @@ module.exports = {
             util: require.resolve('util/'),
             stream: require.resolve('stream-browserify'),
         },
+        alias: {
+            process: 'process/browser',
+        },
     },
     plugins: [
         // fix "process is not defined" error:
         new webpack.ProvidePlugin({
-            process: 'process/browser.js',
+            process: 'process/browser',
+        }),
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('development'),
         }),
     ],
 };
