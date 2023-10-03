@@ -22,7 +22,7 @@ import * as lib from '@jacobhumston/lib';
 This library also includes a web polyfill. This is **experimental** and is not recommended for production.
 
 ```html
-<script src="https://raw.githubusercontent.com/jacobhumston/lib/main/web/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/web/main.js"></script>
 ```
 
 ## Documentation

@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/core.js',
@@ -17,4 +18,10 @@ module.exports = {
             stream: require.resolve('stream-browserify'),
         },
     },
+    plugins: [
+        // fix "process is not defined" error:
+        new webpack.ProvidePlugin({
+            process: 'process/browser.js',
+        }),
+    ],
 };
