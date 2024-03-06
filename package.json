@@ -8,12 +8,13 @@
     "scripts": {
         "format": "npx prettier ./ --write",
         "build": "npx tsc",
-        "test": "node test/index.js",
+        "test": "npm link @jacobhumston/lib && node test/index.js",
         "docs": "npx typedoc --hideGenerator --githubPages false",
         "compile": "npm run build && npm run docs && npm run format"
     },
     "main": "./build/index.js",
     "types": "./build/types/index.d.ts",
+    "type": "module",
     "name": "@jacobhumston/lib",
     "author": {
         "name": "jacobhumston",

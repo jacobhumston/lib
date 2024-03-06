@@ -1,4 +1,2 @@
-export function a(): boolean {
-    console.log('a');
-    return false;
-}
+export { Logger } from './classes/logger.js';
+export * as consoleColors from './data/consoleColors.js';

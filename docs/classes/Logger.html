@@ -1,0 +1,1077 @@
+<!doctype html>
+<html class="default" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=edge" />
+        <title>Logger | @jacobhumston/lib - v2.0.0</title>
+        <meta name="description" content="Documentation for @jacobhumston/lib" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../assets/style.css" />
+        <link rel="stylesheet" href="../assets/highlight.css" />
+        <link rel="stylesheet" href="../assets/my-theme.css" />
+        <script defer src="../assets/main.js"></script>
+        <script async src="../assets/search.js" id="search-script"></script>
+        <script async src="../assets/navigation.js" id="tsd-nav-script"></script>
+    </head>
+    <body>
+        <script>
+            console.log(`Loaded ${location.href}`);
+        </script>
+        <script>
+            document.documentElement.dataset.theme = localStorage.getItem('tsd-theme') || 'os';
+        </script>
+        <header class="tsd-page-toolbar">
+            <div class="tsd-toolbar-contents container">
+                <div class="table-cell" id="tsd-search" data-base="..">
+                    <div class="field">
+                        <label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"
+                            ><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <use href="../assets/icons.svg#icon-search"></use></svg></label
+                        ><input type="text" id="tsd-search-field" aria-label="Search" />
+                    </div>
+                    <div class="field">
+                        <div id="tsd-toolbar-links">
+                            <a href="https://github.com/jacobhumston/lib">GitHub</a
+                            ><a href="https://www.npmjs.com/package/@jacobhumston/lib">npm</a>
+                        </div>
+                    </div>
+                    <ul class="results">
+                        <li class="state loading">Preparing search index...</li>
+                        <li class="state failure">The search index is not available</li>
+                    </ul>
+                    <a href="../index.html" class="title">@jacobhumston/lib - v2.0.0</a>
+                    <div class="tsd-navigation settings">
+                        <details class="tsd-index-accordion">
+                            <summary class="tsd-accordion-summary">
+                                <h3>
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <use href="../assets/icons.svg#icon-chevronDown"></use></svg
+                                    >Settings
+                                </h3>
+                            </summary>
+                            <div class="tsd-accordion-details">
+                                <div class="tsd-filter-visibility">
+                                    <h4 class="uppercase">Member Visibility</h4>
+                                    <form>
+                                        <ul id="tsd-filter-options">
+                                            <li class="tsd-filter-item">
+                                                <label class="tsd-filter-input"
+                                                    ><input
+                                                        type="checkbox"
+                                                        id="tsd-filter-protected"
+                                                        name="protected"
+                                                    /><svg
+                                                        width="32"
+                                                        height="32"
+                                                        viewBox="0 0 32 32"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <rect
+                                                            class="tsd-checkbox-background"
+                                                            width="30"
+                                                            height="30"
+                                                            x="1"
+                                                            y="1"
+                                                            rx="6"
+                                                            fill="none"
+                                                        ></rect>
+                                                        <path
+                                                            class="tsd-checkbox-checkmark"
+                                                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                                                            stroke="none"
+                                                            stroke-width="3.5"
+                                                            stroke-linejoin="round"
+                                                            fill="none"
+                                                        ></path></svg
+                                                    ><span>Protected</span></label
+                                                >
+                                            </li>
+                                            <li class="tsd-filter-item">
+                                                <label class="tsd-filter-input"
+                                                    ><input
+                                                        type="checkbox"
+                                                        id="tsd-filter-private"
+                                                        name="private"
+                                                    /><svg
+                                                        width="32"
+                                                        height="32"
+                                                        viewBox="0 0 32 32"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <rect
+                                                            class="tsd-checkbox-background"
+                                                            width="30"
+                                                            height="30"
+                                                            x="1"
+                                                            y="1"
+                                                            rx="6"
+                                                            fill="none"
+                                                        ></rect>
+                                                        <path
+                                                            class="tsd-checkbox-checkmark"
+                                                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                                                            stroke="none"
+                                                            stroke-width="3.5"
+                                                            stroke-linejoin="round"
+                                                            fill="none"
+                                                        ></path></svg
+                                                    ><span>Private</span></label
+                                                >
+                                            </li>
+                                            <li class="tsd-filter-item">
+                                                <label class="tsd-filter-input"
+                                                    ><input
+                                                        type="checkbox"
+                                                        id="tsd-filter-inherited"
+                                                        name="inherited"
+                                                        checked
+                                                    /><svg
+                                                        width="32"
+                                                        height="32"
+                                                        viewBox="0 0 32 32"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <rect
+                                                            class="tsd-checkbox-background"
+                                                            width="30"
+                                                            height="30"
+                                                            x="1"
+                                                            y="1"
+                                                            rx="6"
+                                                            fill="none"
+                                                        ></rect>
+                                                        <path
+                                                            class="tsd-checkbox-checkmark"
+                                                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                                                            stroke="none"
+                                                            stroke-width="3.5"
+                                                            stroke-linejoin="round"
+                                                            fill="none"
+                                                        ></path></svg
+                                                    ><span>Inherited</span></label
+                                                >
+                                            </li>
+                                            <li class="tsd-filter-item">
+                                                <label class="tsd-filter-input"
+                                                    ><input
+                                                        type="checkbox"
+                                                        id="tsd-filter-external"
+                                                        name="external"
+                                                    /><svg
+                                                        width="32"
+                                                        height="32"
+                                                        viewBox="0 0 32 32"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <rect
+                                                            class="tsd-checkbox-background"
+                                                            width="30"
+                                                            height="30"
+                                                            x="1"
+                                                            y="1"
+                                                            rx="6"
+                                                            fill="none"
+                                                        ></rect>
+                                                        <path
+                                                            class="tsd-checkbox-checkmark"
+                                                            d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25"
+                                                            stroke="none"
+                                                            stroke-width="3.5"
+                                                            stroke-linejoin="round"
+                                                            fill="none"
+                                                        ></path></svg
+                                                    ><span>External</span></label
+                                                >
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="tsd-theme-toggle">
+                                    <h4 class="uppercase">Theme</h4>
+                                    <select id="tsd-theme">
+                                        <option value="os">OS</option>
+                                        <option value="light">Light</option>
+                                        <option value="dark">Dark</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <div class="table-cell" id="tsd-widgets">
+                    <a
+                        href="src/template/toolbar#"
+                        class="tsd-widget tsd-toolbar-icon menu no-caption"
+                        data-toggle="menu"
+                        aria-label="Menu"
+                        ><svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <use href="../assets/icons.svg#icon-menu"></use></svg
+                    ></a>
+                </div>
+            </div>
+        </header>
+        <div class="container container-main">
+            <div class="col-content">
+                <div class="tsd-page-title">
+                    <ul class="tsd-breadcrumb">
+                        <li><a href="../modules.html">@jacobhumston/lib</a></li>
+                        <li><a href="Logger.html">Logger</a></li>
+                    </ul>
+                    <h1>Class Logger</h1>
+                </div>
+                <section class="tsd-panel tsd-comment">
+                    <div class="tsd-comment tsd-typography"><p>Class used to log information to the console.</p></div>
+                    <div class="tsd-comment tsd-typography"></div>
+                </section>
+                <aside class="tsd-sources">
+                    <ul>
+                        <li>Defined in classes/logger.ts:6</li>
+                    </ul>
+                </aside>
+                <section class="tsd-panel-group tsd-index-group">
+                    <section class="tsd-panel tsd-index-panel">
+                        <details class="tsd-index-content tsd-index-accordion" open>
+                            <summary class="tsd-accordion-summary tsd-index-summary">
+                                <h5
+                                    class="tsd-index-heading uppercase"
+                                    role="button"
+                                    aria-expanded="false"
+                                    tabindex="0"
+                                >
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <use href="../assets/icons.svg#icon-chevronSmall"></use>
+                                    </svg>
+                                    Index
+                                </h5>
+                            </summary>
+                            <div class="tsd-accordion-details">
+                                <section class="tsd-index-section">
+                                    <h3 class="tsd-index-heading">Constructors</h3>
+                                    <div class="tsd-index-list">
+                                        <a href="Logger.html#constructor" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-512"></use></svg
+                                            ><span>constructor</span></a
+                                        >
+                                    </div>
+                                </section>
+                                <section class="tsd-index-section">
+                                    <h3 class="tsd-index-heading">Properties</h3>
+                                    <div class="tsd-index-list">
+                                        <a href="Logger.html#console" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-1024"></use></svg
+                                            ><span>console</span></a
+                                        >
+                                        <a href="Logger.html#noColor" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-1024"></use></svg
+                                            ><span>no<wbr />Color</span></a
+                                        >
+                                        <a href="Logger.html#source" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-1024"></use></svg
+                                            ><span>source</span></a
+                                        >
+                                    </div>
+                                </section>
+                                <section class="tsd-index-section">
+                                    <h3 class="tsd-index-heading">Methods</h3>
+                                    <div class="tsd-index-list">
+                                        <a href="Logger.html#_colorString" class="tsd-index-link tsd-is-private"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-2048"></use></svg
+                                            ><span>#color<wbr />String</span></a
+                                        >
+                                        <a href="Logger.html#clear" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-2048"></use></svg
+                                            ><span>clear</span></a
+                                        >
+                                        <a href="Logger.html#info" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-2048"></use></svg
+                                            ><span>info</span></a
+                                        >
+                                        <a href="Logger.html#success" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-2048"></use></svg
+                                            ><span>success</span></a
+                                        >
+                                        <a href="Logger.html#warn" class="tsd-index-link"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-2048"></use></svg
+                                            ><span>warn</span></a
+                                        >
+                                    </div>
+                                </section>
+                            </div>
+                        </details>
+                    </section>
+                </section>
+                <section class="tsd-panel-group tsd-member-group">
+                    <h2>Constructors</h2>
+                    <section class="tsd-panel tsd-member">
+                        <a id="constructor" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>constructor</span
+                            ><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <ul class="tsd-signatures">
+                            <li class="tsd-signature tsd-anchor-link">
+                                <a id="constructor.new_Logger" class="tsd-anchor"></a
+                                ><span class="tsd-kind-constructor-signature">new <wbr />Logger</span
+                                ><span class="tsd-signature-symbol">(</span
+                                ><span class="tsd-kind-parameter">sourceName</span>,
+                                <span class="tsd-kind-parameter">noColor</span
+                                ><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span
+                                ><span class="tsd-signature-symbol">: </span
+                                ><a href="Logger.html" class="tsd-signature-type tsd-kind-class">Logger</a
+                                ><a href="#constructor.new_Logger" aria-label="Permalink" class="tsd-anchor-icon"
+                                    ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                                ></a>
+                            </li>
+                            <li class="tsd-description">
+                                <div class="tsd-parameters">
+                                    <h4 class="tsd-parameters-title">Parameters</h4>
+                                    <ul class="tsd-parameter-list">
+                                        <li>
+                                            <span
+                                                ><span class="tsd-kind-parameter">sourceName</span>:
+                                                <span class="tsd-signature-type">string</span></span
+                                            >
+                                            <div class="tsd-comment tsd-typography">
+                                                <p>The name of the source from which the logs come from.</p>
+                                            </div>
+                                            <div class="tsd-comment tsd-typography"></div>
+                                        </li>
+                                        <li>
+                                            <span
+                                                ><code class="tsd-tag ts-flagOptional">Optional</code>
+                                                <span class="tsd-kind-parameter">noColor</span>:
+                                                <span class="tsd-signature-type">boolean</span></span
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="tsd-returns-title">
+                                    Returns <a href="Logger.html" class="tsd-signature-type tsd-kind-class">Logger</a>
+                                </h4>
+                                <div class="tsd-comment tsd-typography"></div>
+                                <aside class="tsd-sources">
+                                    <ul>
+                                        <li>Defined in classes/logger.ts:25</li>
+                                    </ul>
+                                </aside>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section class="tsd-panel-group tsd-member-group">
+                    <h2>Properties</h2>
+                    <section class="tsd-panel tsd-member">
+                        <a id="console" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>console</span
+                            ><a href="#console" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <div class="tsd-signature">
+                            <span class="tsd-kind-property">console</span><span class="tsd-signature-symbol">:</span>
+                            <span class="tsd-signature-type">Console</span
+                            ><span class="tsd-signature-symbol"> = console</span>
+                        </div>
+                        <div class="tsd-comment tsd-typography">
+                            <p>The console which all the logger methods rely on.</p>
+                        </div>
+                        <div class="tsd-comment tsd-typography"></div>
+                        <aside class="tsd-sources">
+                            <ul>
+                                <li>Defined in classes/logger.ts:15</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section class="tsd-panel tsd-member">
+                        <a id="noColor" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>no<wbr />Color</span
+                            ><a href="#noColor" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <div class="tsd-signature">
+                            <span class="tsd-kind-property">no<wbr />Color</span
+                            ><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span
+                            ><span class="tsd-signature-symbol"> = false</span>
+                        </div>
+                        <div class="tsd-comment tsd-typography">
+                            <p>If logger messages should be colorless or not.</p>
+                        </div>
+                        <div class="tsd-comment tsd-typography"></div>
+                        <aside class="tsd-sources">
+                            <ul>
+                                <li>Defined in classes/logger.ts:20</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section class="tsd-panel tsd-member">
+                        <a id="source" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>source</span
+                            ><a href="#source" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <div class="tsd-signature">
+                            <span class="tsd-kind-property">source</span><span class="tsd-signature-symbol">:</span>
+                            <span class="tsd-signature-type">string</span>
+                        </div>
+                        <div class="tsd-comment tsd-typography"><p>The source from which these logs come from.</p></div>
+                        <div class="tsd-comment tsd-typography"></div>
+                        <aside class="tsd-sources">
+                            <ul>
+                                <li>Defined in classes/logger.ts:10</li>
+                            </ul>
+                        </aside>
+                    </section>
+                </section>
+                <section class="tsd-panel-group tsd-member-group">
+                    <h2>Methods</h2>
+                    <section class="tsd-panel tsd-member tsd-is-private">
+                        <a id="_colorString" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <code class="tsd-tag ts-flagPrivate">Private</code> <span>#color<wbr />String</span
+                            ><a href="#_colorString" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <ul class="tsd-signatures tsd-is-private">
+                            <li class="tsd-signature tsd-anchor-link">
+                                <a id="_colorString._colorString-1" class="tsd-anchor"></a
+                                ><span class="tsd-kind-call-signature">#color<wbr />String</span
+                                ><span class="tsd-signature-symbol">(</span
+                                ><span class="tsd-kind-parameter">string</span>,
+                                <span class="tsd-kind-parameter">color</span><span class="tsd-signature-symbol">)</span
+                                ><span class="tsd-signature-symbol">: </span
+                                ><span class="tsd-signature-type">string</span
+                                ><a href="#_colorString._colorString-1" aria-label="Permalink" class="tsd-anchor-icon"
+                                    ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                                ></a>
+                            </li>
+                            <li class="tsd-description">
+                                <div class="tsd-comment tsd-typography">
+                                    <p>Private method to color a string, which respects <code>this.noColor</code>.</p>
+                                </div>
+                                <div class="tsd-parameters">
+                                    <h4 class="tsd-parameters-title">Parameters</h4>
+                                    <ul class="tsd-parameter-list">
+                                        <li>
+                                            <span
+                                                ><span class="tsd-kind-parameter">string</span>:
+                                                <span class="tsd-signature-type">string</span></span
+                                            >
+                                            <div class="tsd-comment tsd-typography"><p>The string to color.</p></div>
+                                            <div class="tsd-comment tsd-typography"></div>
+                                        </li>
+                                        <li>
+                                            <span
+                                                ><span class="tsd-kind-parameter">color</span>:
+                                                <span class="tsd-signature-type">string</span></span
+                                            >
+                                            <div class="tsd-comment tsd-typography">
+                                                <p>The color to use when coloring this string.</p>
+                                            </div>
+                                            <div class="tsd-comment tsd-typography"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="tsd-returns-title">
+                                    Returns <span class="tsd-signature-type">string</span>
+                                </h4>
+                                <p>The modified string.</p>
+                                <div class="tsd-comment tsd-typography"></div>
+                                <aside class="tsd-sources">
+                                    <ul>
+                                        <li>Defined in classes/logger.ts:36</li>
+                                    </ul>
+                                </aside>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="tsd-panel tsd-member">
+                        <a id="clear" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>clear</span
+                            ><a href="#clear" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <ul class="tsd-signatures">
+                            <li class="tsd-signature tsd-anchor-link">
+                                <a id="clear.clear-1" class="tsd-anchor"></a
+                                ><span class="tsd-kind-call-signature">clear</span
+                                ><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span
+                                ><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span
+                                ><a href="#clear.clear-1" aria-label="Permalink" class="tsd-anchor-icon"
+                                    ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                                ></a>
+                            </li>
+                            <li class="tsd-description">
+                                <div class="tsd-comment tsd-typography"><p>Clears the console.</p></div>
+                                <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+                                <div class="tsd-comment tsd-typography"></div>
+                                <aside class="tsd-sources">
+                                    <ul>
+                                        <li>Defined in classes/logger.ts:70</li>
+                                    </ul>
+                                </aside>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="tsd-panel tsd-member">
+                        <a id="info" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>info</span
+                            ><a href="#info" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <ul class="tsd-signatures">
+                            <li class="tsd-signature tsd-anchor-link">
+                                <a id="info.info-1" class="tsd-anchor"></a
+                                ><span class="tsd-kind-call-signature">info</span
+                                ><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span
+                                ><span class="tsd-kind-parameter">message</span
+                                ><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span
+                                ><span class="tsd-signature-type">void</span
+                                ><a href="#info.info-1" aria-label="Permalink" class="tsd-anchor-icon"
+                                    ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                                ></a>
+                            </li>
+                            <li class="tsd-description">
+                                <div class="tsd-comment tsd-typography"><p>Log an info message to the console.</p></div>
+                                <div class="tsd-parameters">
+                                    <h4 class="tsd-parameters-title">Parameters</h4>
+                                    <ul class="tsd-parameter-list">
+                                        <li>
+                                            <span
+                                                ><code class="tsd-tag ts-flagRest">Rest</code>
+                                                <span class="tsd-signature-symbol">...</span
+                                                ><span class="tsd-kind-parameter">message</span>:
+                                                <span class="tsd-signature-type">string</span
+                                                ><span class="tsd-signature-symbol">[]</span></span
+                                            >
+                                            <div class="tsd-comment tsd-typography"><p>The message to log.</p></div>
+                                            <div class="tsd-comment tsd-typography"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+                                <div class="tsd-comment tsd-typography"></div>
+                                <aside class="tsd-sources">
+                                    <ul>
+                                        <li>Defined in classes/logger.ts:45</li>
+                                    </ul>
+                                </aside>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="tsd-panel tsd-member">
+                        <a id="success" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>success</span
+                            ><a href="#success" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <ul class="tsd-signatures">
+                            <li class="tsd-signature tsd-anchor-link">
+                                <a id="success.success-1" class="tsd-anchor"></a
+                                ><span class="tsd-kind-call-signature">success</span
+                                ><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span
+                                ><span class="tsd-kind-parameter">message</span
+                                ><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span
+                                ><span class="tsd-signature-type">void</span
+                                ><a href="#success.success-1" aria-label="Permalink" class="tsd-anchor-icon"
+                                    ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                                ></a>
+                            </li>
+                            <li class="tsd-description">
+                                <div class="tsd-comment tsd-typography">
+                                    <p>Log a success message to the console.</p>
+                                </div>
+                                <div class="tsd-parameters">
+                                    <h4 class="tsd-parameters-title">Parameters</h4>
+                                    <ul class="tsd-parameter-list">
+                                        <li>
+                                            <span
+                                                ><code class="tsd-tag ts-flagRest">Rest</code>
+                                                <span class="tsd-signature-symbol">...</span
+                                                ><span class="tsd-kind-parameter">message</span>:
+                                                <span class="tsd-signature-type">string</span
+                                                ><span class="tsd-signature-symbol">[]</span></span
+                                            >
+                                            <div class="tsd-comment tsd-typography"><p>The message to log.</p></div>
+                                            <div class="tsd-comment tsd-typography"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+                                <div class="tsd-comment tsd-typography"></div>
+                                <aside class="tsd-sources">
+                                    <ul>
+                                        <li>Defined in classes/logger.ts:53</li>
+                                    </ul>
+                                </aside>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="tsd-panel tsd-member">
+                        <a id="warn" class="tsd-anchor"></a>
+                        <h3 class="tsd-anchor-link">
+                            <span>warn</span
+                            ><a href="#warn" aria-label="Permalink" class="tsd-anchor-icon"
+                                ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                            ></a>
+                        </h3>
+                        <ul class="tsd-signatures">
+                            <li class="tsd-signature tsd-anchor-link">
+                                <a id="warn.warn-1" class="tsd-anchor"></a
+                                ><span class="tsd-kind-call-signature">warn</span
+                                ><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span
+                                ><span class="tsd-kind-parameter">message</span
+                                ><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span
+                                ><span class="tsd-signature-type">void</span
+                                ><a href="#warn.warn-1" aria-label="Permalink" class="tsd-anchor-icon"
+                                    ><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg
+                                ></a>
+                            </li>
+                            <li class="tsd-description">
+                                <div class="tsd-comment tsd-typography">
+                                    <p>Log a warning message to the console.</p>
+                                </div>
+                                <div class="tsd-parameters">
+                                    <h4 class="tsd-parameters-title">Parameters</h4>
+                                    <ul class="tsd-parameter-list">
+                                        <li>
+                                            <span
+                                                ><code class="tsd-tag ts-flagRest">Rest</code>
+                                                <span class="tsd-signature-symbol">...</span
+                                                ><span class="tsd-kind-parameter">message</span>:
+                                                <span class="tsd-signature-type">string</span
+                                                ><span class="tsd-signature-symbol">[]</span></span
+                                            >
+                                            <div class="tsd-comment tsd-typography"><p>The message to log.</p></div>
+                                            <div class="tsd-comment tsd-typography"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+                                <div class="tsd-comment tsd-typography"></div>
+                                <aside class="tsd-sources">
+                                    <ul>
+                                        <li>Defined in classes/logger.ts:63</li>
+                                    </ul>
+                                </aside>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+            <div class="col-sidebar">
+                <div class="page-menu">
+                    <details open class="tsd-index-accordion tsd-page-navigation">
+                        <summary class="tsd-accordion-summary">
+                            <h3>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <use href="../assets/icons.svg#icon-chevronDown"></use></svg
+                                >On This Page
+                            </h3>
+                        </summary>
+                        <div class="tsd-accordion-details">
+                            <ul>
+                                <li>
+                                    <a href="#constructor" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-512"></use></svg
+                                        ><span>constructor</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#console" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-1024"></use></svg
+                                        ><span>console</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#noColor" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-1024"></use></svg
+                                        ><span>no<wbr />Color</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#source" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-1024"></use></svg
+                                        ><span>source</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#_colorString" class="tsd-is-private"
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-2048"></use></svg
+                                        ><span>#color<wbr />String</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#clear" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-2048"></use></svg
+                                        ><span>clear</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#info" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-2048"></use></svg
+                                        ><span>info</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#success" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-2048"></use></svg
+                                        ><span>success</span></a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#warn" class=""
+                                        ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                            <use href="../assets/icons.svg#icon-2048"></use></svg
+                                        ><span>warn</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+                <div class="site-menu">
+                    <nav class="tsd-navigation">
+                        <a href="../modules.html"
+                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                <use href="../assets/icons.svg#icon-1"></use>
+                            </svg>
+                            <div>@jacobhumston/lib -<wbr /> v2.0.0</div></a
+                        >
+                        <ul class="tsd-small-nested-navigation">
+                            <li>
+                                <details class="tsd-index-accordion" data-key="consoleColors">
+                                    <summary class="tsd-accordion-summary">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                            <use href="../assets/icons.svg#icon-chevronDown"></use></svg
+                                        ><a href="../modules/consoleColors.html"
+                                            ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                <use href="../assets/icons.svg#icon-4"></use>
+                                            </svg>
+                                            <div>console<wbr />Colors</div></a
+                                        >
+                                    </summary>
+                                    <div class="tsd-accordion-details">
+                                        <ul class="tsd-nested-navigation">
+                                            <li>
+                                                <a href="../variables/consoleColors.bgBlack.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Black
+                                                        <div class="menu-item-desc">
+                                                            Background black escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgBlue.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Blue
+                                                        <div class="menu-item-desc">
+                                                            Background blue escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgCyan.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Cyan
+                                                        <div class="menu-item-desc">
+                                                            Background cyan escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgGreen.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Green
+                                                        <div class="menu-item-desc">
+                                                            Background green escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgMagenta.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Magenta
+                                                        <div class="menu-item-desc">
+                                                            Background magenta escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgRed.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Red
+                                                        <div class="menu-item-desc">
+                                                            Background red escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgWhite.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />White
+                                                        <div class="menu-item-desc">
+                                                            Background white escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bgYellow.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bg<wbr />Yellow
+                                                        <div class="menu-item-desc">
+                                                            Background yellow escape sequence.
+                                                        </div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.black.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        black
+                                                        <div class="menu-item-desc">Black escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.blink.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        blink
+                                                        <div class="menu-item-desc">Blink escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.blue.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        blue
+                                                        <div class="menu-item-desc">Blue escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.bright.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        bright
+                                                        <div class="menu-item-desc">Bring escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.cyan.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        cyan
+                                                        <div class="menu-item-desc">Cyan escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.dim.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        dim
+                                                        <div class="menu-item-desc">Dim escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.green.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        green
+                                                        <div class="menu-item-desc">Green escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.hidden.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        hidden
+                                                        <div class="menu-item-desc">Hidden escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.magenta.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        magenta
+                                                        <div class="menu-item-desc">Magenta escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.red.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        red
+                                                        <div class="menu-item-desc">Red escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.reset.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        reset
+                                                        <div class="menu-item-desc">Reset escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.reverse.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        reverse
+                                                        <div class="menu-item-desc">Reverse escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.underscore.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        underscore
+                                                        <div class="menu-item-desc">Underscore escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.white.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        white
+                                                        <div class="menu-item-desc">White escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="../variables/consoleColors.yellow.html"
+                                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                                        <use href="../assets/icons.svg#icon-32"></use>
+                                                    </svg>
+                                                    <div>
+                                                        yellow
+                                                        <div class="menu-item-desc">Yellow escape sequence.</div>
+                                                    </div></a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li>
+                                <a href="Logger.html" class="current"
+                                    ><svg class="tsd-kind-icon" viewBox="0 0 24 24">
+                                        <use href="../assets/icons.svg#icon-128"></use>
+                                    </svg>
+                                    <div>
+                                        Logger
+                                        <div class="menu-item-desc">Class used to log information to the console.</div>
+                                    </div></a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </body>
+</html>

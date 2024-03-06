@@ -6,43 +6,1246 @@
     "flags": {},
     "children": [
         {
-            "id": 1,
-            "name": "a",
+            "id": 24,
+            "name": "consoleColors",
             "variant": "declaration",
-            "kind": 64,
+            "kind": 4,
             "flags": {},
-            "sources": [
+            "children": [
                 {
-                    "fileName": "index.ts",
-                    "line": 1,
-                    "character": 16
+                    "id": 40,
+                    "name": "bgBlack",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background black escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 47,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[40m'"
+                },
+                {
+                    "id": 44,
+                    "name": "bgBlue",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background blue escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 59,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[44m'"
+                },
+                {
+                    "id": 46,
+                    "name": "bgCyan",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background cyan escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 65,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[46m'"
+                },
+                {
+                    "id": 42,
+                    "name": "bgGreen",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background green escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 53,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[42m'"
+                },
+                {
+                    "id": 45,
+                    "name": "bgMagenta",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background magenta escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 62,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[45m'"
+                },
+                {
+                    "id": 41,
+                    "name": "bgRed",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background red escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 50,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[41m'"
+                },
+                {
+                    "id": 47,
+                    "name": "bgWhite",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background white escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 68,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[47m'"
+                },
+                {
+                    "id": 43,
+                    "name": "bgYellow",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Background yellow escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 56,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[43m'"
+                },
+                {
+                    "id": 32,
+                    "name": "black",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Black escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 23,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[30m'"
+                },
+                {
+                    "id": 29,
+                    "name": "blink",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Blink escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 14,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[5m'"
+                },
+                {
+                    "id": 36,
+                    "name": "blue",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Blue escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 35,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[34m'"
+                },
+                {
+                    "id": 26,
+                    "name": "bright",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Bring escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 5,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[1m'"
+                },
+                {
+                    "id": 38,
+                    "name": "cyan",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Cyan escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 41,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[36m'"
+                },
+                {
+                    "id": 27,
+                    "name": "dim",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Dim escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 8,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[2m'"
+                },
+                {
+                    "id": 34,
+                    "name": "green",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Green escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 29,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[32m'"
+                },
+                {
+                    "id": 31,
+                    "name": "hidden",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Hidden escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 20,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[8m'"
+                },
+                {
+                    "id": 37,
+                    "name": "magenta",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Magenta escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 38,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[35m'"
+                },
+                {
+                    "id": 33,
+                    "name": "red",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Red escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 26,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[31m'"
+                },
+                {
+                    "id": 25,
+                    "name": "reset",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Reset escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 2,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[0m'"
+                },
+                {
+                    "id": 30,
+                    "name": "reverse",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Reverse escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 17,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[7m'"
+                },
+                {
+                    "id": 28,
+                    "name": "underscore",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Underscore escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 11,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[4m'"
+                },
+                {
+                    "id": 39,
+                    "name": "white",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "White escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 44,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[37m'"
+                },
+                {
+                    "id": 35,
+                    "name": "yellow",
+                    "variant": "declaration",
+                    "kind": 32,
+                    "flags": {
+                        "isConst": true
+                    },
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "Yellow escape sequence."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "data/consoleColors.ts",
+                            "line": 32,
+                            "character": 13
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
+                    },
+                    "defaultValue": "'\\x1b[33m'"
                 }
             ],
-            "signatures": [
+            "groups": [
+                {
+                    "title": "Variables",
+                    "children": [
+                        40, 44, 46, 42, 45, 41, 47, 43, 32, 29, 36, 26, 38, 27, 34, 31, 37, 33, 25, 30, 28, 39, 35
+                    ]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "data/consoleColors.ts",
+                    "line": 1,
+                    "character": 0
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Logger",
+            "variant": "declaration",
+            "kind": 128,
+            "flags": {},
+            "comment": {
+                "summary": [
+                    {
+                        "kind": "text",
+                        "text": "Class used to log information to the console."
+                    }
+                ]
+            },
+            "children": [
                 {
                     "id": 2,
-                    "name": "a",
-                    "variant": "signature",
-                    "kind": 4096,
+                    "name": "constructor",
+                    "variant": "declaration",
+                    "kind": 512,
                     "flags": {},
                     "sources": [
                         {
-                            "fileName": "index.ts",
-                            "line": 1,
-                            "character": 16
+                            "fileName": "classes/logger.ts",
+                            "line": 25,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 3,
+                            "name": "new Logger",
+                            "variant": "signature",
+                            "kind": 16384,
+                            "flags": {},
+                            "sources": [
+                                {
+                                    "fileName": "classes/logger.ts",
+                                    "line": 25,
+                                    "character": 4
+                                }
+                            ],
+                            "parameters": [
+                                {
+                                    "id": 4,
+                                    "name": "sourceName",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {},
+                                    "comment": {
+                                        "summary": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The name of the source from which the logs come from."
+                                            }
+                                        ]
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "string"
+                                    }
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "noColor",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {
+                                        "isOptional": true
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "boolean"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "reference",
+                                "target": 1,
+                                "name": "Logger",
+                                "package": "@jacobhumston/lib"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "console",
+                    "variant": "declaration",
+                    "kind": 1024,
+                    "flags": {},
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "The console which all the logger methods rely on."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 15,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "reference",
+                        "target": {
+                            "sourceFileName": "node_modules/typescript/lib/lib.dom.d.ts",
+                            "qualifiedName": "Console"
+                        },
+                        "name": "Console",
+                        "package": "typescript"
+                    },
+                    "defaultValue": "console"
+                },
+                {
+                    "id": 8,
+                    "name": "noColor",
+                    "variant": "declaration",
+                    "kind": 1024,
+                    "flags": {},
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "If logger messages should be colorless or not."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 20,
+                            "character": 4
                         }
                     ],
                     "type": {
                         "type": "intrinsic",
                         "name": "boolean"
+                    },
+                    "defaultValue": "false"
+                },
+                {
+                    "id": 6,
+                    "name": "source",
+                    "variant": "declaration",
+                    "kind": 1024,
+                    "flags": {},
+                    "comment": {
+                        "summary": [
+                            {
+                                "kind": "text",
+                                "text": "The source from which these logs come from."
+                            }
+                        ]
+                    },
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 10,
+                            "character": 4
+                        }
+                    ],
+                    "type": {
+                        "type": "intrinsic",
+                        "name": "string"
                     }
+                },
+                {
+                    "id": 9,
+                    "name": "#colorString",
+                    "variant": "declaration",
+                    "kind": 2048,
+                    "flags": {
+                        "isPrivate": true
+                    },
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 36,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 10,
+                            "name": "#colorString",
+                            "variant": "signature",
+                            "kind": 4096,
+                            "flags": {},
+                            "comment": {
+                                "summary": [
+                                    {
+                                        "kind": "text",
+                                        "text": "Private method to color a string, which respects "
+                                    },
+                                    {
+                                        "kind": "code",
+                                        "text": "`this.noColor`"
+                                    },
+                                    {
+                                        "kind": "text",
+                                        "text": "."
+                                    }
+                                ],
+                                "blockTags": [
+                                    {
+                                        "tag": "@returns",
+                                        "content": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The modified string."
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "sources": [
+                                {
+                                    "fileName": "classes/logger.ts",
+                                    "line": 36,
+                                    "character": 4
+                                }
+                            ],
+                            "parameters": [
+                                {
+                                    "id": 11,
+                                    "name": "string",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {},
+                                    "comment": {
+                                        "summary": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The string to color."
+                                            }
+                                        ]
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "string"
+                                    }
+                                },
+                                {
+                                    "id": 12,
+                                    "name": "color",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {},
+                                    "comment": {
+                                        "summary": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The color to use when coloring this string."
+                                            }
+                                        ]
+                                    },
+                                    "type": {
+                                        "type": "intrinsic",
+                                        "name": "string"
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 22,
+                    "name": "clear",
+                    "variant": "declaration",
+                    "kind": 2048,
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 70,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 23,
+                            "name": "clear",
+                            "variant": "signature",
+                            "kind": 4096,
+                            "flags": {},
+                            "comment": {
+                                "summary": [
+                                    {
+                                        "kind": "text",
+                                        "text": "Clears the console."
+                                    }
+                                ]
+                            },
+                            "sources": [
+                                {
+                                    "fileName": "classes/logger.ts",
+                                    "line": 70,
+                                    "character": 4
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "name": "info",
+                    "variant": "declaration",
+                    "kind": 2048,
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 45,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 14,
+                            "name": "info",
+                            "variant": "signature",
+                            "kind": 4096,
+                            "flags": {},
+                            "comment": {
+                                "summary": [
+                                    {
+                                        "kind": "text",
+                                        "text": "Log an info message to the console."
+                                    }
+                                ]
+                            },
+                            "sources": [
+                                {
+                                    "fileName": "classes/logger.ts",
+                                    "line": 45,
+                                    "character": 4
+                                }
+                            ],
+                            "parameters": [
+                                {
+                                    "id": 15,
+                                    "name": "message",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {
+                                        "isRest": true
+                                    },
+                                    "comment": {
+                                        "summary": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The message to log."
+                                            }
+                                        ]
+                                    },
+                                    "type": {
+                                        "type": "array",
+                                        "elementType": {
+                                            "type": "intrinsic",
+                                            "name": "string"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "name": "success",
+                    "variant": "declaration",
+                    "kind": 2048,
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 53,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 17,
+                            "name": "success",
+                            "variant": "signature",
+                            "kind": 4096,
+                            "flags": {},
+                            "comment": {
+                                "summary": [
+                                    {
+                                        "kind": "text",
+                                        "text": "Log a success message to the console."
+                                    }
+                                ]
+                            },
+                            "sources": [
+                                {
+                                    "fileName": "classes/logger.ts",
+                                    "line": 53,
+                                    "character": 4
+                                }
+                            ],
+                            "parameters": [
+                                {
+                                    "id": 18,
+                                    "name": "message",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {
+                                        "isRest": true
+                                    },
+                                    "comment": {
+                                        "summary": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The message to log."
+                                            }
+                                        ]
+                                    },
+                                    "type": {
+                                        "type": "array",
+                                        "elementType": {
+                                            "type": "intrinsic",
+                                            "name": "string"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": 19,
+                    "name": "warn",
+                    "variant": "declaration",
+                    "kind": 2048,
+                    "flags": {},
+                    "sources": [
+                        {
+                            "fileName": "classes/logger.ts",
+                            "line": 63,
+                            "character": 4
+                        }
+                    ],
+                    "signatures": [
+                        {
+                            "id": 20,
+                            "name": "warn",
+                            "variant": "signature",
+                            "kind": 4096,
+                            "flags": {},
+                            "comment": {
+                                "summary": [
+                                    {
+                                        "kind": "text",
+                                        "text": "Log a warning message to the console."
+                                    }
+                                ]
+                            },
+                            "sources": [
+                                {
+                                    "fileName": "classes/logger.ts",
+                                    "line": 63,
+                                    "character": 4
+                                }
+                            ],
+                            "parameters": [
+                                {
+                                    "id": 21,
+                                    "name": "message",
+                                    "variant": "param",
+                                    "kind": 32768,
+                                    "flags": {
+                                        "isRest": true
+                                    },
+                                    "comment": {
+                                        "summary": [
+                                            {
+                                                "kind": "text",
+                                                "text": "The message to log."
+                                            }
+                                        ]
+                                    },
+                                    "type": {
+                                        "type": "array",
+                                        "elementType": {
+                                            "type": "intrinsic",
+                                            "name": "string"
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "groups": [
+                {
+                    "title": "Constructors",
+                    "children": [2]
+                },
+                {
+                    "title": "Properties",
+                    "children": [7, 8, 6]
+                },
+                {
+                    "title": "Methods",
+                    "children": [9, 22, 13, 16, 19]
+                }
+            ],
+            "sources": [
+                {
+                    "fileName": "classes/logger.ts",
+                    "line": 6,
+                    "character": 13
                 }
             ]
         }
     ],
     "groups": [
         {
-            "title": "Functions",
+            "title": "Namespaces",
+            "children": [24]
+        },
+        {
+            "title": "Classes",
             "children": [1]
         }
     ],
@@ -54,12 +1257,192 @@
             "qualifiedName": ""
         },
         "1": {
-            "sourceFileName": "src/index.ts",
-            "qualifiedName": "a"
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger"
         },
         "2": {
-            "sourceFileName": "src/index.ts",
-            "qualifiedName": "a"
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.__constructor"
+        },
+        "3": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger"
+        },
+        "4": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "sourceName"
+        },
+        "5": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "noColor"
+        },
+        "6": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.source"
+        },
+        "7": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.console"
+        },
+        "8": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.noColor"
+        },
+        "9": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.#colorString"
+        },
+        "10": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.#colorString"
+        },
+        "11": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "string"
+        },
+        "12": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "color"
+        },
+        "13": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.info"
+        },
+        "14": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.info"
+        },
+        "15": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "message"
+        },
+        "16": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.success"
+        },
+        "17": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.success"
+        },
+        "18": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "message"
+        },
+        "19": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.warn"
+        },
+        "20": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.warn"
+        },
+        "21": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "message"
+        },
+        "22": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.clear"
+        },
+        "23": {
+            "sourceFileName": "src/classes/logger.ts",
+            "qualifiedName": "Logger.clear"
+        },
+        "24": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": ""
+        },
+        "25": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "reset"
+        },
+        "26": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bright"
+        },
+        "27": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "dim"
+        },
+        "28": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "underscore"
+        },
+        "29": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "blink"
+        },
+        "30": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "reverse"
+        },
+        "31": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "hidden"
+        },
+        "32": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "black"
+        },
+        "33": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "red"
+        },
+        "34": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "green"
+        },
+        "35": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "yellow"
+        },
+        "36": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "blue"
+        },
+        "37": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "magenta"
+        },
+        "38": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "cyan"
+        },
+        "39": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "white"
+        },
+        "40": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgBlack"
+        },
+        "41": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgRed"
+        },
+        "42": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgGreen"
+        },
+        "43": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgYellow"
+        },
+        "44": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgBlue"
+        },
+        "45": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgMagenta"
+        },
+        "46": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgCyan"
+        },
+        "47": {
+            "sourceFileName": "src/data/consoleColors.ts",
+            "qualifiedName": "bgWhite"
         }
     }
 }
