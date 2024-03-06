@@ -24,7 +24,7 @@ import { wait, log } from '@jacobhumston/lib';
 
 // Or if you are on the web using a CDN...
 // Note: Change the version "latest" to the version you want to use.
-import { wait, log } from 'https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/web/core.min.js';
+import { wait, log } from 'https://cdn.jsdelivr.net/gh/jacobhumston/lib@latest/src/web.core.min.js';
 ```
 
 ## Documentation

@@ -13,11 +13,7 @@
     ],
     "scripts": {
         "test": "node --trace-uncaught test/run.js",
-        "render-docs": "node renderDocs.cjs",
-        "render-docs-web": "node renderDocs.cjs web",
-        "render-docs-all": "node renderDocs.cjs web && node renderDocs.cjs",
-        "create-types": ".\\node_modules\\.bin\\tsc",
-        "webpack": "npx webpack"
+        "create-types": ".\\node_modules\\.bin\\tsc"    
     },
     "repository": {
         "type": "git",
