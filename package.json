@@ -1,32 +1,23 @@
 {
-    "name": "@jacobhumston/lib",
-    "version": "1.1.3",
-    "description": "Simple utility package created by Jacob Humston.",
-    "main": "src/core.js",
-    "browser": "web/core.js",
-    "type": "module",
-    "types": "./dist/core.d.ts",
-    "files": [
-        "src",
-        "dist",
-        "web"
-    ],
-    "scripts": {
-        "test": "node --trace-uncaught test/run.js",
-        "create-types": ".\\node_modules\\.bin\\tsc"    
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jacobhumston/lib.git"
-    },
-    "author": "jacobhumston",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/jacobhumston/lib/issues"
-    },
-    "homepage": "https://github.com/jacobhumston/lib#readme",
     "devDependencies": {
-        "jsdoc-to-markdown": "^8.0.0",
-        "typescript": "^5.2.2"
-    }
+        "@mxssfd/typedoc-theme": "^1.1.3",
+        "prettier": "^3.2.5",
+        "typedoc": "^0.25.11",
+        "typescript": "^5.3.3"
+    },
+    "scripts": {
+        "format": "npx prettier ./ --write",
+        "build": "npx tsc",
+        "test": "node test/index.js",
+        "docs": "npx typedoc --hideGenerator --githubPages false",
+        "compile": "npm run build && npm run docs && npm run format"
+    },
+    "main": "./build/index.js",
+    "types": "./build/types/index.d.ts",
+    "name": "@jacobhumston/lib",
+    "author": {
+        "name": "jacobhumston",
+        "email": "lovelyjacob@aol.com"
+    },
+    "version": "2.0.0"
 }
