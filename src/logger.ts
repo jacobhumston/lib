@@ -1,7 +1,7 @@
 import { EventEmitter } from 'node:events';
 
 /** Log levels. */
-export type LogLevel = 'info' | 'warn' | 'error' | 'debug';
+export type LogLevel = 'info' | 'warn' | 'error' | 'debug' | 'success';
 
 /** Logger options that can be used to modify a Logger's behavior. */
 export type LoggerOptions = {
@@ -32,6 +32,11 @@ export type LoggerOptions = {
      * * Default: `'DefaultLogger'`
      */
     name?: string | null;
+    /**
+     * If true, the prefix will be spaced from the message.
+     * * Default: `true`
+     */
+    includePrefixSpacing?: boolean;
 };
 
 /** Logger events. */
@@ -43,12 +48,16 @@ export interface LoggerEvents {
 /** Map of saved loggers. */
 export const savedLoggers = new Map<string, Logger>();
 
+/** An array of log levels ordered by smallest in length to greatest. */
+export const logLevels: Array<LogLevel> = ['info', 'warn', 'debug', 'error', 'success'];
+
 /** The default logger options. */
 export const defaultLoggerOptions: Required<LoggerOptions> = {
     defaultLogLevel: 'info',
     prefix: (level) => `[${level.toUpperCase()}]:`,
     disabled: false,
     name: 'Logger',
+    includePrefixSpacing: true,
 };
 
 /** Logger class with a lot of utility packed in.*/
@@ -75,11 +84,13 @@ export class Logger {
      * @returns Logger prefix.
      */
     getPrefix(logLevel: LogLevel): string {
-        return typeof this.options.prefix === 'function'
-            ? this.options.prefix(logLevel, this.options)
-            : typeof this.options.prefix === 'string'
-              ? this.options.prefix
-              : '';
+        return (
+            (typeof this.options.prefix === 'function'
+                ? this.options.prefix(logLevel, this.options)
+                : typeof this.options.prefix === 'string'
+                  ? this.options.prefix
+                  : '') + (this.options.includePrefixSpacing ? ' ' : '')
+        );
     }
 }
 
@@ -90,4 +101,15 @@ export class Logger {
  */
 export function getLoggerByName(name: string = 'DefaultLogger'): Logger {
     return savedLoggers.get(name) ?? new Logger({ name });
+}
+
+/**
+ * Get the space padding for a log level.
+ * This padding can be used to match log levels in length.
+ * @param level The log level.
+ * @returns The padding for the log level.
+ */
+export function getLogLevelPadding(level: LogLevel): string {
+    // We can use the last index since they are ordered by length.
+    return ' '.repeat((logLevels.at(-1) as string).length - level.length);
 }

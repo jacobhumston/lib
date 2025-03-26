@@ -6,4 +6,3 @@ logger.events.on('log', (message, level) => {
     console.log(message, level);
 });
 
-console.log(lib.getLoggerByName('TestLogger'));
